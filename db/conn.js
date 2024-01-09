@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const dbUrl = process.env.dbUrl;
 function dbConnect() {
-  mongoose.connect(dbUrl, {
+  mongoose.connect("mongodb+srv://admin:admin@cluster0.aslcu8g.mongodb.net/NodeApiDb", {
     // useCreateIndex:true,
     useNewUrlParser: true,
     useUnifiedTopology: true,
