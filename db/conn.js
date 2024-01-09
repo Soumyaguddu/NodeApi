@@ -9,7 +9,7 @@ function dbConnect() {
   }).then(()=>{
     console.log('Connection Successfully with mongoDB');
   }).catch((e)=>{
-    console.log('connection error');
+    console.log('connection error', e);
     process.exit(1);
   });
 }
